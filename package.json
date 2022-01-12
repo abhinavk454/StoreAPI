@@ -1,0 +1,16 @@
+{
+  "name": "StoreAPI",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/abhinavk454/StoreAPI.git",
+  "author": "Abhinav <abhinav.vikash2@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "dotenv": "^11.0.0",
+    "express": "^4.17.2",
+    "mongoose": "^6.1.6"
+  }
+}

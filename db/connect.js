@@ -5,12 +5,13 @@ const connectDB = (url) => {
     url,
     {
       useNewUrlParser: true,
-      useCreateIndex: true,
-      useFindAndModify: false,
       useUnifiedTopology: true,
     },
-    () => {
-      console.log("Connected to db 👍.");
+    (err, client) => {
+      if (err) {
+        return console.error(err);
+      }
+      console.log("Connected to database");
     }
   );
 };

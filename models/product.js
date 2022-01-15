@@ -21,10 +21,12 @@ const productSchema = new mongoose.Schema({
     type: Date,
     default: Date.now(),
   },
+
   company: {
+    type: String,
     enum: {
-      values: ["alpha", "beta", "gamma", "delta"],
-      message: "Company dosen't exists.",
+      values: ["ikea", "liddy", "caressa", "marcos"],
+      message: `Company dosen't exists.`,
     },
   },
 });
